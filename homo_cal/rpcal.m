@@ -10,8 +10,10 @@ function M = rpcal(rgb,xyz,Morder)
 %   Anglia.
 
 %   References:
-%   Gong, H. and Finlayson, G.D., 2017. Root-Polynomial Color Homography
-%   Color Correction, AIC Congress.
+%   Finlayson, G.D., Mackiewicz, M. and Hurlbert, A., 2015. Color correction
+%    using root-polynomial regression. IEEE Transactions on Image Processing
+%   , 24(5), pp.1460-1470.
+
 
 if nargin<3, Morder = 2; end
 
