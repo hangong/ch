@@ -50,7 +50,7 @@ where `aloi/col` is the color temperature test directory, `MP`'s rows refer obje
 Given pixel-to-pixel correspondances, color homography is applied for shading-invariant color mapping.
 
 ## Shading invariant color mapping
-see `./homo_sim/dismatch_im.m` reproduces Fig.5 of the paper.
+see `./homo_sim/dismatch_im.m` which reproduces Fig.5 of the paper.
 
 ## Color correction test
 We implemented 2 other color correction methods:
