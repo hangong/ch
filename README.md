@@ -3,6 +3,9 @@ Demostration of color homography Theorem with experiments in color correction, c
 
 Images of co-planar points in 3-dimensional space taken from different camera positions are a homography apart. Homographies are at the heart of geometric methods in computer vision and are used in geometric camera calibration, 3D reconstruction, stereo vision and image mosaicking among other tasks. In this paper we show the surprising result that homographies are the apposite tool for relating image colors of the same scene when the capture conditions ‒ illumination color, shading and device ‒ change.
 
+[[Paper](http://homepages.inf.ed.ac.uk/rbf/PAPERS/cshgong17.pdf)]
+[[Supplementary Material](http://www2.cmp.uea.ac.uk/~ybb15eau/projects/color_homography/supl_review.pdf)]
+
 ## References
 Please cite the following papers if you find the code useful.
 1. Finlayson, G.D., Gong, H. (**Co-first author**) and Fisher, R., 2017. Color Homography: theory and applications. IEEE Transactions on Pattern Analysis and Machine Intelligence.
