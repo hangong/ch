@@ -67,7 +67,7 @@ We also show 2 color homography approaches:
 
 *Please note that the results here are slightly different from the paper's due to a preivous evaluation bug. However, the relative difference is still similar.*
 
-To evaluation for all methods, in MATLAB execute
+To evaluate for all methods, in MATLAB execute
 ```
 >> cal_real
 ```
