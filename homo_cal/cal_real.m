@@ -15,8 +15,8 @@ addpath('../utility');
 dbpath = '../data/HG_ColourChecker/'; % path of rawdata
 
 fmethod = {@alshomocal;@ransachomocal_luv;@lscal;...
-           @(p1,p2) alsRPcal(p1,p2,[4,6])};
-Method = {'ALS';'ALS_RANSAC';'LS';'ALS_RP'};
+           @(p1,p2) alsRPcal(p1,p2,[4,6]); @rpcal};
+Method = {'ALS';'ALS_RANSAC';'LS';'ALS_RP';'RP'};
 
 % discover a list of images for conversion
 fl = getAll([dbpath,'patch_real'],'f'); % get all files
@@ -73,9 +73,9 @@ for i = 1:Npic
         case {'ALS','ALS_RANSAC'}
             xyz_est_n = uea_homocvt(fsv_uniform,M_n);
             xyz_est_u = uea_homocvt(fsv_uniform,M_u);
-        case {'ALS_RP'}
-            xyz_est_n = M_n.cfun(fsv_uniform',M_n.matrix,M_n.terms)';
-            xyz_est_u = M_u.cfun(fsv_uniform',M_u.matrix,M_u.terms)';
+        case {'ALS_RP','RP'}
+            xyz_est_n = M_n.cfun(fsv_uniform,M_n.matrix,M_n.terms);
+            xyz_est_u = M_u.cfun(fsv_uniform,M_u.matrix,M_u.terms);
         otherwise
             xyz_est_n = fsv_uniform*M_n;
             xyz_est_u = fsv_uniform*M_u;

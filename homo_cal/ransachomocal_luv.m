@@ -18,6 +18,10 @@ function M = ransachomocal_luv(rgb,xyz,white,rgb_u)
 %   Finlayson, G.D., Gong, H. and Fisher, R., 2017. Color Homography: theory
 %   and applications. IEEE Transactions on Pattern Analysis and Machine
 %   Intelligence.
+%
+%   Finlayson, G.D., Gong, H. and Fisher, R., 2016. Color Homography color
+%   correction. Color and Imaging Conference.
+
 
 %   Note:
 %   Due to the randomness of RANSAC, we show the best theoretically 

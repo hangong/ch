@@ -40,6 +40,8 @@ if nargin<5, solver = 'DCT'; end
 if nargin<6, Morder = 2; end
 if nargin<7, ind = 1:prod(csz); end
 
+P = P'; Q = Q';
+
 M.terms = build_terms(Morder); % build RP terms exponential factors
 M.cfun = @cfun; % RP homography mapping function
 
@@ -125,6 +127,9 @@ function terms = build_terms(Mo)
 end
 
 function cXYZ = cfun(cRGB,cM,cterms)
+
+    cRGB = cRGB';
+    
     Nt = size(cterms,2);
     Np = size(cRGB,2);
 
@@ -138,7 +143,8 @@ function cXYZ = cfun(cRGB,cM,cterms)
         end
     end
 
-    cXYZ = cM*prgb; % convert
+    cXYZ = (cM*prgb)'; % convert
+
 end
 
 function basis = create_basis(sz,solver)
