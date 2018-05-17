@@ -16,14 +16,18 @@ Please cite the following papers if you find the code useful.
 The code was tested on Ubuntu 16.04 with MATLAB 2016b.
 
 ## Download datasets
+1. Download files
 * [24-patch color checker with non-uniform shading](http://www2.cmp.uea.ac.uk/~ybb15eau/db/HG_ColourChecker.zip)
-* [ALOI object recognition dataset (subset)](http://www2.cmp.uea.ac.uk/~ybb15eau/db/ALOI.zip)
+* ALOI object recognition dataset (subset) [col](http://aloi.science.uva.nl/tars/aloi_col.tar) [ill](http://aloi.science.uva.nl/tars/aloi_ill.tar) [view](http://aloi.science.uva.nl/tars/aloi_view.tar)
 
-Make a directory called 'data' and extract the above zip packages to the 'data' dir. We will have the following structures:
+2. Make a directory named 'data' and extract the above packages to the 'data' dir. We will have the following structures:
 ```
 ./data/HG_HG_ColourChecker
-./data/aloi
+./data/aloi/col/
+./data/aloi/ill/
+./data/aloi/view/
 ```
+We need to rename some extracted directories. For instance, the extracted 'aloi_col' directory becomes a sub-directory './data/aloi/col/'.
 ## Compile ASIFT
 ```
 $ cd ./homo_sim/ASIFT
@@ -47,7 +51,7 @@ The color homography color indexing is implemented in `./homo_sim/homo_index.m`.
 ```
 >> MP = swain_index('aloi/col');
 ```
-where `aloi/col` is the color temperature test directory, `MP`'s rows refer object ID and its column refers to capture condition. See the [ALOI dataset website](http://aloi.science.uva.nl/) for the details.
+where `aloi/col` is the color temperature test directory, `MP`'s rows refer to object ID and its columns refer to capture condition. See the [ALOI dataset website](http://aloi.science.uva.nl/) for the details.
 
 # Color Correction
 Given pixel-to-pixel correspondances, color homography is applied for shading-invariant color mapping.
