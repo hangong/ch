@@ -45,7 +45,7 @@ objsel = 1:size(pm,1);
 No = size(objsel,2); % number of objects
 Nc = size(pm,2); % number of conditions
 MP = NaN(No,Nc); % MP for each query
-if exist('MP.mat','file') load('MP.mat','MP'); end % recovery
+if exist('MP.mat','file'), load('MP.mat','MP'); end % recovery
 
 % build model caches
 mpath = [mlpath,dbname];
