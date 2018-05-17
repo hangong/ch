@@ -18,7 +18,7 @@ The code was tested on Ubuntu 16.04 with MATLAB 2016b.
 ## Download datasets
 1. Download files
 * [24-patch color checker with non-uniform shading](http://www2.cmp.uea.ac.uk/~ybb15eau/db/HG_ColourChecker.zip)
-* ALOI object recognition dataset (subset) [col](http://aloi.science.uva.nl/tars/aloi_col.tar) [ill](http://aloi.science.uva.nl/tars/aloi_ill.tar) [view](http://aloi.science.uva.nl/tars/aloi_view.tar)
+* ALOI object recognition dataset (subset) [[col](http://aloi.science.uva.nl/tars/aloi_col.tar)][ [ill](http://aloi.science.uva.nl/tars/aloi_ill.tar) ][[view](http://aloi.science.uva.nl/tars/aloi_view.tar)]
 
 2. Make a directory named 'data' and extract the above packages to the 'data' dir. We will have the following structures:
 ```
@@ -60,7 +60,7 @@ Given pixel-to-pixel correspondances, color homography is applied for shading-in
 see `./homo_sim/dismatch_im.m` which reproduces Fig.5 of the paper.
 
 ## Color correction test
-We implemented 2 other color correction methods:
+We implemented 3 other color correction methods:
 * Linear least-squares (`homo_cal/lscal.m`)
 * Alternating least-squares (`homo_cal/alshomocal.m`)
 * Root-polynomial least-squares (`homo_cal/rpcal.m`)
