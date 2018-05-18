@@ -81,9 +81,9 @@ CXXFLAGS 	+= -I./
 
 # link all the opject code
 $(DETECT): $(OBJ_D) $(LIBDEPS)
-	$(CXX) -o $@ $(OBJ_D) $(LDFLAGS)
+	$(CXX) -o $@ $(OBJ_D) $(LDFLAGS) && mv $(DETECT) ../
 $(MATCH): $(OBJ_M) $(LIBDEPS)
-	$(CXX) -o $@ $(OBJ_M) $(LDFLAGS)
+	$(CXX) -o $@ $(OBJ_M) $(LDFLAGS) && mv $(MATCH) ../
 
 # housekeeping
 .PHONY	: clean distclean
