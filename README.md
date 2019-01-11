@@ -1,5 +1,5 @@
 # Color Homography Theorem
-Demostration of color homography Theorem with experiments in color correction, color feature matching, and color indexing, published in TPAMI 2017.
+Demostration of color homography Theorem with experiments in color correction, color feature matching, and color indexing, published in TPAMI 2019.
 
 Images of co-planar points in 3-dimensional space taken from different camera positions are a homography apart. Homographies are at the heart of geometric methods in computer vision and are used in geometric camera calibration, 3D reconstruction, stereo vision and image mosaicking among other tasks. In this paper we show the surprising result that homographies are the apposite tool for relating image colors of the same scene when the capture conditions ‒ illumination color, shading and device ‒ change.
 
@@ -8,7 +8,7 @@ Images of co-planar points in 3-dimensional space taken from different camera po
 
 ## References
 Please cite the following papers if you find the code useful.
-1. Finlayson, G.D., Gong, H. (**Co-first author**) and Fisher, R., 2017. Color Homography: theory and applications. IEEE Transactions on Pattern Analysis and Machine Intelligence.
+1. Finlayson, G.D., Gong, H. (**Co-first author**) and Fisher, R., 2019. Color Homography: theory and applications. IEEE Transactions on Pattern Analysis and Machine Intelligence.
 2. Finlayson, G.D., Gong, H. and Fisher, R., 2016. Color Homography Color Correction, Color and Imaging Conference.
 3. Gong, H. and Finlayson, G.D., 2017. Root-Polynomial Color Homography Color Correction, AIC Congress.
 
